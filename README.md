@@ -2,7 +2,7 @@
 
 ## Getting started
 
-`$ npm install react-native-card91-sdk --save`
+`$ npm install https://github.com/saisuresh-banc91/react-native-card91-sdk.git --save`
 
 ### Mostly automatic installation
 
