@@ -8,8 +8,14 @@
  * https://github.com/facebook/react-native
  */
 
-import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import React, {Component} from 'react';
+
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import Card91Sdk from 'react-native-card91-sdk';
 
 export default class App extends Component<{}> {
@@ -19,7 +25,13 @@ export default class App extends Component<{}> {
         <Text style={styles.welcome}>☆Card91Sdk example☆</Text>
         <Text style={styles.instructions}>STATUS: loaded</Text>
         <Text style={styles.welcome}>☆☆☆</Text>
-        <Card91Sdk />
+        <Text style={styles.welcome}>☆☆☆</Text>
+
+        {Platform.OS === 'android' ? (
+          <Card91Sdk />
+        ) : (
+          <Text style={styles.welcome}>IOS SDK</Text>
+        )}
       </View>
     );
   }
