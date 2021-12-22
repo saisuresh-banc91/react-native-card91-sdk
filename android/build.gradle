@@ -26,10 +26,6 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 
 buildscript {
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.3'
-    }
-
     // The Android Gradle plugin is only required when opening the android folder stand-alone.
     // This avoids unnecessary downloads and potential conflicts when the library is included as a
     // module dependency in an application project.
@@ -42,7 +38,7 @@ buildscript {
         dependencies {
             // This should reflect the Gradle plugin version used by
             // the minimum React Native version supported.
-            classpath 'com.android.tools.build:gradle:3.4.1'
+            classpath 'com.android.tools.build:gradle:7.0.2'
         }
     }
 }
@@ -57,8 +53,8 @@ android {
         versionName "1.0"
     }
     buildFeatures {
-        viewBinding  true
-        dataBinding  true
+        viewBinding = true
+        dataBinding = true
     }
 
     lintOptions {
@@ -85,8 +81,8 @@ repositories {
 
 dependencies {
     //noinspection GradleDynamicVersion
-    implementation(name:'nn', ext:'aar')
-//    implementation fileTree(dir: "src/main/java/com/reactlibrary/libs", include: ["nn.aar"])
+    // implementation(name:'nn', ext:'aar')
+   implementation fileTree(dir: "src/main/java/com/reactlibrary/libs", include: ["nn.aar"])
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'com.facebook.react:react-native:+'  // From node_modules
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -158,7 +154,7 @@ afterEvaluate { project ->
     task androidJavadoc(type: Javadoc) {
         source = android.sourceSets.main.java.srcDirs
         classpath += files(android.bootClasspath)
-        classpath += files(project.getConfigurations().getByName('compile').asList())
+        // classpath += files(project.getConfigurations().getByName('compile').asList())
         include '**/*.java'
     }
 

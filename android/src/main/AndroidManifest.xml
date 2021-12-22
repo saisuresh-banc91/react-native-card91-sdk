@@ -2,5 +2,73 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.reactlibrary">
-
+          <application>
+          
+<activity
+            android:name="io.card91.android.sdk.ui.new_flow_v1.V1ResetAtmPinActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="io.card91.android.sdk.ui.new_flow_v1.V1MPinActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="io.card91.android.sdk.ui.new_flow_v1.V1ErrorInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="io.card91.android.sdk.ui.new_flow_v1.V1DashboardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="io.card91.android.sdk.ui.home.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="io.card91.android.sdk.ui.login_signup.AuthActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="io.card91.android.sdk.ui.kyc.KycMobileNumberRegistration"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="io.card91.android.sdk.ui.kyc.KycInfo"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="io.card91.android.sdk.ui.change_pin.UpdateMPinScreen"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="io.card91.android.sdk.ui.forgot_password.ForgotPasswordOtpVerification"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="io.card91.android.sdk.ui.verification.C91VerifyMobileScreen"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+            </application>
 </manifest>
