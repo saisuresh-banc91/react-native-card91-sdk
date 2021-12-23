@@ -1,8 +1,8 @@
 {
-  "name": "react-native-card91-sdk",
+  "name": "@saisuresh-banc91/react-native-card91-sdk",
   "title": "React Native Card91 Sdk",
   "version": "1.0.0",
-  "description": "TODO",
+  "description": "Card91 customer SDK for React Native",
   "main": "index.js",
   "files": [
     "README.md",
@@ -14,18 +14,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-card91-sdk.git",
-    "baseUrl": "https://github.com/github_account/react-native-card91-sdk"
+    "url": "git+https://github.com/saisuresh-banc91/react-native-card91-sdk.git",
+    "baseUrl": "https://github.com/saisuresh-banc91/react-native-card91-sdk"
   },
   "keywords": [
     "react-native"
   ],
-  "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
-  },
   "license": "MIT",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",

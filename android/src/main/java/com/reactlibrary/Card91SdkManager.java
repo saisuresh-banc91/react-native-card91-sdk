@@ -28,14 +28,7 @@ public class Card91SdkManager extends SimpleViewManager<View> {
     public View createViewInstance(ThemedReactContext c) {
         // TODO: Implement some actually useful functionality
         AppCompatCheckBox cb = new AppCompatCheckBox(c);
-            // Intent intent = new Intent(c, CalculatorActivity.class);
-            // intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            Intent intent = new Intent(c, C91VerifyMobileScreen.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.putExtra(C91Constant.ENVIRONMENT, SdkEnv.DEV);
-            intent.putExtra(C91Constant.NUMBER, "919876543213");
-            intent.putExtra(C91Constant.DEVICE_ID, "uiyrdswe218973");
-             c.startActivity(intent);
+            
         cb.setChecked(true);
         return cb;
     }

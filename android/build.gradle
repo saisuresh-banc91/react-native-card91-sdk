@@ -82,7 +82,7 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     // implementation(name:'nn', ext:'aar')
-   implementation fileTree(dir: "src/main/java/com/reactlibrary/libs", include: ["nn.aar"])
+   implementation fileTree(dir: "src/main/java/com/reactlibrary/libs", include: ["C91_V1_CustomerApp_SDK .aar"])
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'com.facebook.react:react-native:+'  // From node_modules
     implementation 'androidx.core:core-ktx:1.7.0'
