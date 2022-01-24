@@ -12,10 +12,10 @@
 
 // These defaults should reflect the SDK versions used by
 // the minimum React Native version supported.
-def DEFAULT_COMPILE_SDK_VERSION = 31
+def DEFAULT_COMPILE_SDK_VERSION = 30
 def DEFAULT_BUILD_TOOLS_VERSION = '28.0.3'
 def DEFAULT_MIN_SDK_VERSION = 24
-def DEFAULT_TARGET_SDK_VERSION = 31
+def DEFAULT_TARGET_SDK_VERSION = 30
 
 def safeExtGet(prop, fallback) {
     rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
@@ -82,18 +82,18 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     // implementation(name:'nn', ext:'aar')
-   implementation fileTree(dir: "src/main/java/com/reactlibrary/libs", include: ["C91_V1_CustomerApp_SDK .aar"])
-    implementation 'com.google.android.material:material:1.4.0'
+   implementation fileTree(dir: "src/main/java/com/reactlibrary/libs", include: ["kisshtNew.aar"])
+   implementation 'com.google.android.material:material:1.4.0'
     implementation 'com.facebook.react:react-native:+'  // From node_modules
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    implementation 'androidx.core:core:1.8.0-alpha01'
+    implementation 'androidx.core:core:1.7.0-alpha01'
     //HTTP CALL
     implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.3'
     //JSON CONVERTOR
@@ -101,7 +101,8 @@ dependencies {
     //kotlin reflect
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.6.0'
 
-    implementation "androidx.security:security-crypto:1.0.0"
+  //  implementation "androidx.security:security-crypto:1.0.0" /* For gradle 7.0.1 */
+    implementation "androidx.security:security-crypto:1.1.0-alpha03" /* For gradle 6.7.1 */
 
     //shimmer
     implementation 'com.facebook.shimmer:shimmer:0.5.0@aar'
