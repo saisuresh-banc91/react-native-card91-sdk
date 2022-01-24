@@ -21,11 +21,11 @@ import com.facebook.react.bridge.ReactMethod;
 // import io.card91.android.sdk.*;
 // import io.card91.android.sdk.ui.verification.C91VerifyMobileScreen;
 // import io.card91.android.sdk.ui.new_flow_v1.V1MPinActivity;
-import com.card91.sdk.kissht.C91MainActivity
+import com.card91.sdk.kissht.C91MainActivity;
 // import io.card91.android.sdk.utils.C91Constant;
 // import io.card91.android.sdk.utils.SdkEnv;
-import com.card91.sdk.kissht.utils.C91Constant
-import com.card91.sdk.kissht.utils.SdkEnv
+import com.card91.sdk.kissht.utils.C91Constant;
+import com.card91.sdk.kissht.utils.SdkEnv;
 import com.facebook.react.bridge.WritableNativeArray;
 
 class ActivityStarterModule extends ReactContextBaseJavaModule {

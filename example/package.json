@@ -10,9 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@saisuresh-banc91/react-native-card91-sdk": "^1.0.6",
     "react": "17.0.2",
-    "react-native": "0.66.4",
-    "react-native-card91-sdk": "link:../"
+    "react-native": "0.66.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

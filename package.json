@@ -1,7 +1,7 @@
 {
   "name": "@saisuresh-banc91/react-native-card91-sdk",
   "title": "React Native Card91 Sdk",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "Card91 customer SDK for React Native",
   "main": "index.js",
   "files": [
