@@ -21,7 +21,3 @@ class Services: NSObject {
 //*****Login API*****//
 
 var CardholderloginAPI = Services(services:"https://api.sb.stag.card91.in/issuance/v1/cardholders/login/token")
-
-//***** Block API *****//
-var BlockserviceAPI =   Services(services:"https://api.sb.stag.card91.in/issuance/v1/cardholders/cards/lock")
-

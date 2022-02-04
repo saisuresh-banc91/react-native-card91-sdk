@@ -10,9 +10,9 @@ import Foundation
 //login model variables
 struct CardholderLoginmodel {
     var mobilenumstr: String = ""
+    var id: String = ""
     var cardHoldername: String = ""
     var lastFourDigits: String = ""
     var cardMode: String = ""
-    
 
 }
